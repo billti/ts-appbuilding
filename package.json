@@ -1,0 +1,15 @@
+{
+  "name": "ts-appbuilding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["typescript", "node.js", "template"],
+  "author": "Bill Ticehurst <billti@hotmail.com>",
+  "license": "MIT",
+  "description": "Outline of building Node.js apps with TypeScript",
+  "engines": {
+    "node": ">=8.0"
+  }
+}
