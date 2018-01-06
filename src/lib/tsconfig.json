@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",   // Emit CommonJS format modules
+    "target": "es2015",     // Emit ES2015 compatible JavaScript code
+    "lib": ["es2015"],      // Using the ES2015 core libraries (e.g. Promise, Map, etc.)
+    "sourceMap": true,      // Emit source maps beside the generated JavaScript
+    "outDir": "../../lib"   // Write generated code to the project's /lib folder
+  }
+}

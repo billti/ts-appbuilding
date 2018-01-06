@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",             // Convert JSX to React API calls
+    "jsxFactory": "h",          // Use the 'h' function to create elements
+    "module": "es2015",         // Emit ES2015-style modules
+    "moduleResolution": "node", // Resolve imports using Node.js resolution
+    "sourceMap": true,          // Emit source maps for generated code
+    "target": "es5",            // Target ES5 compatible engines
+    "importHelpers": true,      // Consume runtime helpers via imports
+    "outDir": "../build"        // Write generated code to /src/public/build
+  }
+}

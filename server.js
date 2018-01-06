@@ -1,1 +1,1 @@
-console.log("Running the server"); 
+const server = require('./lib/server.js');
