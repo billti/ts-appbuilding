@@ -17,7 +17,7 @@ console.log(`Node.js versions: ${util.format("%j", process.versions)}`);
 
 Add a configuration file to `/src/lib/tsconfig.json` with the following lines:
 
-```json
+```js
 {
   "compilerOptions": {
     "module": "commonjs",   // Emit CommonJS format modules
@@ -39,9 +39,11 @@ npm install --save-dev typescript tslib @types/node
 
 Edit `package.json` to add the script to build the server code.
 
-```json
-"scripts": {
+```js
+{ // Other package.json fields...
+  "scripts": {
     "build:server": "tsc -p ./src/lib"
+  }
 }
 ```
 
@@ -58,7 +60,7 @@ Running the command `npm start` should execute the compiled TypeScript code writ
 ## Building the client code
 Create another TypeScript configuration file for the client code at `/src/public/scripts/tsconfig.json`:
 
-```json
+```js
 {
   "compilerOptions": {
     "module": "es2015",         // Emit ES2015-style modules
@@ -80,12 +82,13 @@ export default {"version": "1.0.0"};
 
 Update the scripts in `package.json` to build the client code, i.e.
 
-```json
-"scripts": {
+```js
+{ // Other fields...
+  "scripts": {
     "build:server": "tsc -p ./src/lib",
     "build:client": "tsc -p ./src/public/scripts"
+  }
 }
-
 ```
 
 Test the build by running `npm run build:client`, and the .js and .map files should be

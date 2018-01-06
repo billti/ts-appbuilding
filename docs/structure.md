@@ -58,14 +58,3 @@ Beyond the standard files of index.js, server.js, etc, there are several other "
 ```
 
 _continue on to [building](build.md)_
-
-# TODO
-
- - Honor NODE_ENV === 'production'
- - Ensure using SSL. See x-arr-ssl header (see https://tomasz.janczuk.org/2013/12/secure-by-default-with-ssl-in-windows.html)
- - Hot module reloading (maybe?).
-   - Investigate https://github.com/glenjamin/webpack-hot-middleware
-
-# Notes
-
- - Mocha will automatically search and run .js files from the "/test" folder.

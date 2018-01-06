@@ -8,9 +8,11 @@ npm install --save-dev webpack source-map-loader
 
 Add an npm script named "bundle" to run it:
 
-```json
-"scripts": {
+```js
+{ // Other package.json fields...
+  "scripts": {
     "bundle": "webpack --config webpack.config.js"
+  }
 }
 ```
 

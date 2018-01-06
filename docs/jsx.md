@@ -11,12 +11,14 @@ npm install --save-dev preact
 
 Update the `tsconfig.json` file under `/src/public/scripts` with the necessary compiler options:
 
-```json
+```js
+{
   "compilerOptions": {
     "jsx": "react",             // Convert JSX to React API calls
     "jsxFactory": "h",          // Use the 'h' function to create elements
     // etc.
   }
+}
 ```
 
 Rename the file at `/src/public/scripts/app.ts` to `app.tsx`, and change the contents to:
@@ -61,3 +63,15 @@ As one last optimization, add a general "build" script to `package.json` to run 
 ```
 "build": "npm run build:server && npm run build:client && npm run bundle",
 ```
+
+
+### TODO
+
+ - Honor NODE_ENV === 'production'
+ - Ensure using SSL. See x-arr-ssl header (see https://tomasz.janczuk.org/2013/12/secure-by-default-with-ssl-in-windows.html)
+ - Hot module reloading (maybe?).
+   - Investigate https://github.com/glenjamin/webpack-hot-middleware
+
+### Notes
+
+ - Mocha will automatically search and run .js files from the "/test" folder.
